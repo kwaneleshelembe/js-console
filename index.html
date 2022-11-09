@@ -4,28 +4,40 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JavaScript Editor</title>
+    <title>JavaScript Console</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
-<body>
-    <h1>JavaScript</h1>
-    <p>Simple JavaScript Editor</p>
-    <hr>
-    <div id="user-options">
-        <div id="console-btn">Console</div>
-        <div id="run-btn">Run</div>
-    </div>
-    <hr>
+<body class="bg-light">
+    <header class="text-center">
+        <h1 class="display-4 m-3">JavaScript</h1>
+        <p class="lead">Simple JavaScript Console</p>
+    </header>
 
-    <div id="editor">
-        <textarea rows="15" placeholder="//code here"></textarea>
-    </div>
-
-    <div id="console-container">
-        <div id="console"></div>
-    </div>
+    <main class="container">
+        <hr>
+        <div class="row">
+            <div id="console-btn" class="btn btn-outline-primary btn-lg col-4 offset-1">Console</div>
+            <div id="run-btn" class="btn btn-outline-success btn-lg col-4 offset-2">Run</div>
+        </div>
+        <hr>
+        <div id="editor">
+            <textarea rows="15" placeholder="//code here"></textarea>
+        </div>
+        <div id="console-container">
+            <div id="console"></div>
+        </div>
+    </main>
+    
+    <footer class="bg-dark text-light mt-4 p-3 text-center">
+        <small>Created by Kwanele Shelembe.</small>
+        <br>
+        <small>My Website is <a class="text-success" href="https://kwaneleshelembe.github.io/portfolio/">Here</a></small>
+        <br>
+        <small >Copyright &copy; 2022 Kwanele Shelembe</small>
+    </footer>
+    
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 
