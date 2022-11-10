@@ -36,7 +36,8 @@ body {
 }
 
 #editor textarea {
-    width: 100%;
+    width: 90%;
+    max-width: 50em;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     padding-left: 0.5em;

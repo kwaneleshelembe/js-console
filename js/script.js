@@ -1,6 +1,12 @@
 const editor = document.querySelector("textarea");
 
 const userConsole = document.querySelector("#console");
+const closeConsoleBtn=userConsole.querySelector("button");
+
+closeConsoleBtn.addEventListener("click",(e)=>{
+    closeConsole();
+});
+
 
 let consoleOpen = false;
 
@@ -32,13 +38,14 @@ runBtn.addEventListener("click", (e) => {
     if (consoleOpen == false) {
         openConsole();
     }
-    userConsole.innerText = "";
+
+    userConsole.querySelector("div").innerText = "";
+
     const console = {
         log(value) {
-            userConsole.innerHTML += value + "\n";
+            userConsole.querySelector("div").innerText += value + "\n";
         }
     }
-    const document = userConsole;
 
     try {
         eval(editor.value);
