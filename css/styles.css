@@ -14,15 +14,6 @@ body {
 }
 
 
-#user-options {
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: 500;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-
 #editor,
 #console-container {
     display: flex;
@@ -30,9 +21,7 @@ body {
 }
 
 #editor textarea {
-    margin: 0;
-    width: 98%;
-    max-width: 50em;
+    width: 100%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     padding-left: 0.5em;
@@ -77,4 +66,8 @@ body {
         bottom: -50%;
         opacity: 0;
     }
+}
+
+footer{
+    background-color: var(--dark);
 }
